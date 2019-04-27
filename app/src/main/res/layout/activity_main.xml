@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerPadding="10dp"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_cur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:background="#000000"
+        android:text="当前拖动条SeekBar的控件ID -\n红色Red 0\n绿色Green 0\n蓝色Blue 0"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:dividerPadding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:dividerPadding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/txt_red"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="红色Red 0"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:id="@+id/txt_green"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="绿色Green 0"
+                android:textColor="#00ff00" />
+
+            <TextView
+                android:id="@+id/txt_blue"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="蓝色Blue 0"
+                android:textColor="#0000ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:dividerPadding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <SeekBar
+                android:id="@+id/sb1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:max="255"
+                android:progress="0" />
+
+            <SeekBar
+                android:id="@+id/sb2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:max="255"
+                android:progress="0" />
+
+            <SeekBar
+                android:id="@+id/sb3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:max="255"
+                android:progress="0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
