@@ -8,7 +8,7 @@
 
 - Java 8 及以上
 
-- Android API 15 (Android 4.0.3 Ice Cream Sandwich) 及以上
+- Android API 21 (Android 5.0 Lollipop) 及以上
 
 ---
 
